@@ -1,0 +1,280 @@
+*{
+    font-family: crassula, sans-serif; /* Fontkilde: https://fonts.adobe.com/fonts/crassula */
+    font-weight: 400;
+    font-style: normal;
+    margin: auto;
+    scroll-behavior: smooth;
+}
+
+body{
+  background-color: rgb(58, 78, 2);
+}
+
+header{
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+header>h1{
+    font-size: 35px;
+    color: rgb(249, 174, 9);
+}
+header>p{
+    font-size: 20px;
+    width: 40%;
+    margin: auto;
+}
+
+main{
+  width: 100vw;
+}
+
+/*stil for menyen*/
+ul{
+    list-style: none;
+    background-color: rgb(58, 78, 2);
+    width: 15%;
+    float: left;
+    margin: 0;
+    padding: 0;
+    border: outset 5px rgb(249, 174, 9);
+    border-radius: 25px;
+    position: absolute;
+}
+
+li a{
+    display: block;
+    width: 90%;
+    height: 60px;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 28px;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+
+li a:hover{
+    background-color: rgb(10, 92, 10);
+    border: inset 3px rgb(249, 174, 9);
+    border-radius: 25px;
+}
+
+#wrapper{
+    position: relative;
+    width: 67%;
+}
+
+#image-map{
+    width: 100%;
+    z-index: -1;
+}
+
+.logoMaschmanns{
+  z-index: 1;
+  position: absolute;
+  left: 5%;
+  top: 78%;
+  width: 13%;
+}
+
+.logoJacobs{
+  z-index: 2;
+  position: absolute;
+  left: 34%;
+  top: 42%;
+  width: 13%;
+}
+
+.logoLandhandleriet{
+  z-index: 1;
+  position: absolute;
+  left: 7%;
+  top: 17%;
+  width: 13%;
+
+}
+
+.logoEkteVare{
+  z-index: 1;
+  position: absolute;
+  left: 67%;
+  top: 33%;
+  width: 13%;
+}
+
+.logoEkteVare:hover,.logoJacobs:hover,.logoLandhandleriet:hover,.logoMaschmanns:hover{
+  border: rgb(249, 174, 9) outset;
+  border-radius: 100%;
+}
+
+.butikk-container{
+  margin-top: 9%;
+}
+
+.text-container{
+    background-color: rgb(58, 78, 2);
+    border: outset rgb(249, 174, 9) 5px;
+    border-radius: 15px;
+    font-size: 30px;
+    text-align: center;
+    width: 30%;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    text-shadow: 2px 2px 2px black;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-bottom: 0px;
+}
+
+.hvit-tekst{
+    color: white;
+}
+
+.gul-tekst{
+    color: rgb(249, 174, 9);
+}
+
+h2 {
+  color: rgb(249, 174, 9);
+  /*Fontkilde: https://fonts.adobe.com/fonts/bodoni-urw */
+  font-family: Bodoni URW;
+  font-size: 40px;
+  text-align: center;
+}
+
+.sub-title {
+  font-family: Bodoni URW;
+  font-size: 25px;
+}
+
+.veibeskrivelse{
+  font-family: Bodoni URW;
+  font-size: 25px;
+  color: white;
+}
+
+.veibeskrivelse:hover{
+  color: rgb(249, 174, 9);
+}
+
+.info-butikker{
+  border: solid lime;
+  background-color: lime;
+  z-index: 10;
+}
+
+.text-block h3{
+  font-family: Bodoni URW;
+}
+
+.hours{
+  font-family: crassula, sans-serif;
+}
+
+.container{
+  position: relative;
+  margin-top: 30px;
+  height: 60%;
+}
+
+.butikk-bilde{
+  width: 100%;
+  max-height: 700px;
+  min-height: 500px;
+  z-index: -1;
+}
+
+.info-block {
+  position: absolute;
+  background-color: rgb(58, 78, 2);
+  color: white;
+  padding-left: 20px;
+  width: 30%;
+  height: min-content;
+  font-size: 18px;
+  top: 10%;
+  left: 60%;
+  border: outset rgb(249, 174, 9) 5px;
+  border-radius: 25px;
+  text-shadow: 1px 1px 1px black;
+  z-index: 1;
+  padding: 1%;
+}
+
+.info-wrapper{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.info{
+  width: 40%;
+}
+
+.apningstider{
+  width: 40%;
+  border-radius: 25px;
+  text-align: center;
+}
+
+.kontaktinfo{
+  text-align: center;
+  width: 100%;
+  margin-top: 12px;
+}
+
+footer{
+  background-color: rgb(58, 78, 2);
+  height: 150px;
+  width: 100%;
+  padding-left: 20px;
+  margin: 0px;
+  position: relative;
+}
+
+footer p{
+  color: rgb(249, 174, 9);
+
+}
+
+
+@media only screen and (max-width: 1090px){
+  .text-container{
+    display: none;
+  }
+
+  h2{
+    font-size: 25px;
+  }
+
+  .info-block{
+    font-size: 15px;
+    width: 50%;
+    left: 45%;
+  }
+}
+
+@media only screen and (max-width: 1400px){
+  h2{
+    font-size: 32px;
+  }
+
+  header p{
+    font-size: 20px;
+    width: 550px;
+  }
+
+  .info-block{
+    font-size: 17px;
+  }
+
+  li a{
+    font-size: 23px;
+  }
+}
